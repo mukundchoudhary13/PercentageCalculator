@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.blink {
+    animation: blink 1s infinite alternate;
+    color: red; /* Initial color */
+}
+
+@keyframes blink {
+    0% {
+        color: red; /* Initial color */
+    }
+    25% {
+        color: blue; /* Color change at 25% */
+    }
+    50% {
+        color: green; /* Color change at 50% */
+    }
+    75% {
+        color: yellow; /* Color change at 75% */
+    }
+    100% {
+        color: red; /* Back to initial color */
+    }
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+footer a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container > div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: calc(100% - 16px); /* Adjusting for padding and border */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+}
